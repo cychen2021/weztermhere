@@ -42,7 +42,7 @@ struct WezTermHere;
 
 impl IExplorerCommand_Impl for WezTermHere_Impl {
     fn GetTitle(&self, _items: Ref<IShellItemArray>) -> Result<PWSTR> {
-        unsafe { SHStrDupW(w!("在此处打开 WezTerm")) }
+        unsafe { SHStrDupW(w!("Open WezTerm here")) }
     }
 
     fn GetIcon(&self, _items: Ref<IShellItemArray>) -> Result<PWSTR> {
